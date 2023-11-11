@@ -11,5 +11,12 @@ public class Main {
         penguin.makesSound();
         penguin.makesSound("penguin sound");
 
+
+        // Dependency Injection
+        PizzaProvider pizzaProvider = new PizzaPlace();
+
+        PizzaCustomer pizzaCustomer  = new PizzaCustomer(pizzaProvider);
+
+        pizzaCustomer.orderAndEnjoyPizza();
     }
 }
