@@ -8,6 +8,7 @@ public class Circle extends Shape implements Drawable, Sketch{
     int r = 2;
     @Override
     public void area() {
+        System.out.println(r);
         System.out.println("Calculated Area");
     }
 
